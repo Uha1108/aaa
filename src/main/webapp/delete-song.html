@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Delete Books</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="icon" href="assets/image/logo.png" type="image/png">
+    <style>
+        .container {
+            max-width: 960px;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-4">Admin Dashboard</span>
+        </a>
+    </header>
+    <form action="delete-song" method="post">
+        <div class="mb-3">
+            <label for="inputMusicID" class="form-label">Book ID</label>
+            <input type="text" class="form-control" name="id" id="inputMusicID" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Delete this book</button>
+    </form>
+</div>
+</body>
+</html>
